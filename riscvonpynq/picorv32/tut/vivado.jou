@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jan 25 05:32:15 2019
+# Process ID: 20663
+# Current directory: /home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut
+# Command line: vivado tutorial/tutorial.xpr
+# Log file: /home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut/vivado.log
+# Journal file: /home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project tutorial/tutorial.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut/tutorial/tutorial.srcs/sources_1/bd/tutorial/tutorial.bd}
+startgroup
+create_bd_cell -type ip -vlnv indirajhenny:ip:fluterv64_tut:1.0 tutorialProcessor/fluterv64_tut_0
+endgroup
+set_property location {2 678 447} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+set_property location {1 830 361} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+set_property location {1 678 302} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+set_property location {1 694 267} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+set_property location {1 559 228} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+connect_bd_intf_net [get_bd_intf_pins tutorialProcessor/riscvBramController/S_AXI] [get_bd_intf_pins tutorialProcessor/fluterv64_tut_0/cpu_dmem_master]
+set_property location {1 679 182} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+set_property location {1 592 163} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+set_property location {0.5 478 122} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+set_property location {1.5 778 137} [get_bd_cells tutorialProcessor/fluterv64_tut_0]
+startgroup
+set_property -dict [list CONFIG.SINGLE_PORT_BRAM {1}] [get_bd_cells tutorialProcessor/riscvBramController]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PROTOCOL {AXI4LITE}] [get_bd_cells tutorialProcessor/riscvBramController]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DATA_WIDTH {32} CONFIG.PROTOCOL {AXI4LITE}] [get_bd_cells tutorialProcessor/riscvBramController]
+endgroup
+save_bd_design

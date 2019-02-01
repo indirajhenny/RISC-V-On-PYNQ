@@ -1,0 +1,30 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port s_axi_aclk -pg 1 -y 240 -defaultsOSRD
+preplace port por_resetn -pg 1 -y 80 -defaultsOSRD
+preplace port S_AXI_MEM -pg 1 -y 220 -defaultsOSRD
+preplace port riscv_clk -pg 1 -y 20 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -y 260 -defaultsOSRD
+preplace port irq -pg 1 -y 80 -defaultsOSRD
+preplace port riscv_resetn -pg 1 -y 100 -defaultsOSRD
+preplace inst psBramController -pg 1 -lvl 2 -y 200 -defaultsOSRD
+preplace inst riscvBramController -pg 1 -lvl 2 -y 0 -defaultsOSRD
+preplace inst fluterv64_tut_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst riscvReset -pg 1 -lvl 1 -y -190 -defaultsOSRD
+preplace inst riscvBram -pg 1 -lvl 3 -y 110 -defaultsOSRD
+preplace netloc Conn2 1 0 2 50J -20 930J
+preplace netloc s_axi_aresetn_1 1 0 2 60J -30 920J
+preplace netloc clk_in1_1 1 0 2 40J -40 940J
+preplace netloc riscvBramController_BRAM_PORTA 1 2 1 1480
+preplace netloc subprocessorClk 1 0 2 10 -60 960J
+preplace netloc riscvReset_peripheral_aresetn 1 1 1 970
+preplace netloc ext_reset_in_1 1 0 1 20J
+preplace netloc fluterv64_tut_0_cpu_dmem_master 1 1 1 950
+preplace netloc psBramController_BRAM_PORTA 1 2 1 1480
+preplace netloc aux_reset_in_1 1 0 1 30J
+levelinfo -pg 1 -10 630 1340 1650 2410 -top -280 -bot 810
+",
+}
+0
