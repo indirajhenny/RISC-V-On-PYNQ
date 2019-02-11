@@ -1,0 +1,46 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y 410 -defaultsOSRD
+preplace port arduino_gpio -pg 1 -y 20 -defaultsOSRD
+preplace port pmodb_gpio -pg 1 -y 100 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 430 -defaultsOSRD
+preplace port pmoda_gpio -pg 1 -y 80 -defaultsOSRD
+preplace port arduino_iic -pg 1 -y 40 -defaultsOSRD
+preplace portBus pb_i -pg 1 -y 20 -defaultsOSRD
+preplace portBus led_o -pg 1 -y 60 -defaultsOSRD
+preplace inst psAxiInterconnect -pg 1 -lvl 2 -y 240 -defaultsOSRD
+preplace inst subprocessorClk -pg 1 -lvl 3 -y 520 -defaultsOSRD
+preplace inst psInterruptController -pg 1 -lvl 5 -y 190 -defaultsOSRD
+preplace inst irqAxiInterconnect -pg 1 -lvl 4 -y 160 -defaultsOSRD
+preplace inst orcaLmbProcessor -pg 1 -lvl 3 -y 300 -defaultsOSRD
+preplace inst porReset -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst irqConcat -pg 1 -lvl 4 -y 360 -defaultsOSRD
+preplace inst resetSlice -pg 1 -lvl 2 -y 480 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 460 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 5 NJ 410 NJ 410 NJ 410 NJ 410 NJ
+preplace netloc por_resetn 1 0 3 30 150 520 100 840J
+preplace netloc orcaLmbProcessor_m_axi_duc_aresetn 1 3 1 1220
+preplace netloc processing_system7_0_GPIO_O 1 1 1 480J
+preplace netloc orcaLmbProcessor_m_axi_duc_aclk 1 3 1 1190
+preplace netloc psAxiInterconnect_M00_AXI 1 2 1 800
+preplace netloc processing_system7_0_M_AXI_GP1 1 1 3 470J 60 NJ 60 1190
+preplace netloc irqAxiInterconnect_M00_AXI 1 4 1 N
+preplace netloc subprocessorClk 1 0 4 10 610 NJ 610 830 600 1200
+preplace netloc xlconcat_0_dout 1 4 1 1520J
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ 430 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc psirq 1 0 6 20 620 NJ 620 NJ 620 NJ 620 NJ 620 1780
+preplace netloc S01_AXI_1 1 3 1 1200
+preplace netloc porReset_interconnect_aresetn 1 1 3 480 90 NJ 90 1190J
+preplace netloc S_AXI_PSX 1 1 1 510
+preplace netloc orcaLmbProcessor_irq 1 3 1 1200
+preplace netloc FCLK_CLK0 1 0 5 10 140 490 80 820 80 1220 10 1510
+preplace netloc riscv_resetn 1 2 1 840
+preplace netloc FCLK_CLK1 1 0 2 30 600 490
+preplace netloc S_AXI_MEM_1 1 2 1 N
+preplace netloc S00_ARESETN_1 1 1 4 500 40 810 170 1210 310 1510J
+levelinfo -pg 1 -10 250 660 1020 1370 1650 1800 -top 0 -bot 640
+",
+}
+0

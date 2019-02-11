@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_porReset_0/sim/flute_porReset_0.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_psInterruptController_0/sim/flute_psInterruptController_0.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/proc_common_v3_00_a/hdl/src/vhdl/flute_subprocessorClk_0_conv_funs_pkg.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/proc_common_v3_00_a/hdl/src/vhdl/flute_subprocessorClk_0_proc_common_pkg.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/proc_common_v3_00_a/hdl/src/vhdl/flute_subprocessorClk_0_ipif_pkg.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/proc_common_v3_00_a/hdl/src/vhdl/flute_subprocessorClk_0_family_support.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/proc_common_v3_00_a/hdl/src/vhdl/flute_subprocessorClk_0_family.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/proc_common_v3_00_a/hdl/src/vhdl/flute_subprocessorClk_0_soft_reset.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/proc_common_v3_00_a/hdl/src/vhdl/flute_subprocessorClk_0_pselect_f.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/flute_subprocessorClk_0_address_decoder.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/flute_subprocessorClk_0_slave_attachment.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/axi_lite_ipif_v1_01_a/hdl/src/vhdl/flute_subprocessorClk_0_axi_lite_ipif.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/flute_subprocessorClk_0_clk_wiz_drp.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/flute_subprocessorClk_0_axi_clk_config.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_procBramController_0/sim/flute_procBramController_0.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_psBramController_0/sim/flute_psBramController_0.vhd" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_riscvReset_0/sim/flute_riscvReset_0.vhd" \
+
+nosort

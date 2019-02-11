@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 10 19:04:34 2019
+# Process ID: 2446
+# Current directory: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm
+# Command line: vivado -mode batch -source ../..//build.tcl -tclargs flute single xc7z020clg400-1 PYNQ-Z1 ../../../ip/
+# Log file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/vivado.log
+# Journal file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/vivado.jou
+#-----------------------------------------------------------
+source ../..//build.tcl

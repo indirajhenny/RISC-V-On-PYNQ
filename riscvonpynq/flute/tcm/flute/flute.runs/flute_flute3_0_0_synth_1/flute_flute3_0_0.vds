@@ -1,0 +1,2095 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 10 20:28:28 2019
+# Process ID: 4377
+# Current directory: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_flute3_0_0_synth_1
+# Command line: vivado -log flute_flute3_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source flute_flute3_0_0.tcl
+# Log file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_flute3_0_0_synth_1/flute_flute3_0_0.vds
+# Journal file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_flute3_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source flute_flute3_0_0.tcl -notrace
+Command: synth_design -top flute_flute3_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4418 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1258.332 ; gain = 83.992 ; free physical = 123459 ; free virtual = 501594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'flute_flute3_0_0' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ip/flute_flute3_0_0/synth/flute_flute3_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'mkCore' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCore.v:105]
+INFO: [Synth 8-638] synthesizing module 'mkCPU' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:105]
+INFO: [Synth 8-638] synthesizing module 'mkCSR_RegFile' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:107]
+INFO: [Synth 8-638] synthesizing module 'mkCSR_MIE' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_MIE.v:36]
+INFO: [Synth 8-256] done synthesizing module 'mkCSR_MIE' (1#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_MIE.v:36]
+INFO: [Synth 8-638] synthesizing module 'mkCSR_MIP' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_MIP.v:43]
+INFO: [Synth 8-256] done synthesizing module 'mkCSR_MIP' (2#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_MIP.v:43]
+INFO: [Synth 8-638] synthesizing module 'FIFO20' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO20.v:47]
+	Parameter guarded bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIFO20' (3#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO20.v:47]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:1226]
+WARNING: [Synth 8-6014] Unused sequential element rg_dpc_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:1746]
+WARNING: [Synth 8-6014] Unused sequential element rg_dcsr_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:1764]
+WARNING: [Synth 8-6014] Unused sequential element rg_dscratch0_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:1766]
+WARNING: [Synth 8-6014] Unused sequential element rg_dscratch1_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:1768]
+INFO: [Synth 8-256] done synthesizing module 'mkCSR_RegFile' (4#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:107]
+INFO: [Synth 8-638] synthesizing module 'mkGPR_RegFile' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkGPR_RegFile.v:45]
+INFO: [Synth 8-638] synthesizing module 'RegFile' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/RegFile.v:38]
+	Parameter addr_width bound to: 5 - type: integer 
+	Parameter data_width bound to: 64 - type: integer 
+	Parameter lo bound to: 5'b00000 
+	Parameter hi bound to: 5'b11111 
+INFO: [Synth 8-256] done synthesizing module 'RegFile' (5#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/RegFile.v:38]
+INFO: [Synth 8-256] done synthesizing module 'mkGPR_RegFile' (6#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkGPR_RegFile.v:45]
+INFO: [Synth 8-638] synthesizing module 'mkNear_Mem' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem.v:145]
+INFO: [Synth 8-638] synthesizing module 'mkMMU_Cache' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:88]
+	Parameter dmem_not_imem bound to: 1'b1 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1053]
+INFO: [Synth 8-638] synthesizing module 'FIFO2' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO2.v:51]
+	Parameter width bound to: 137 - type: integer 
+	Parameter guarded bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIFO2' (7#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO2.v:51]
+INFO: [Synth 8-638] synthesizing module 'FIFO2__parameterized0' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO2.v:51]
+	Parameter width bound to: 66 - type: integer 
+	Parameter guarded bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIFO2__parameterized0' (7#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO2.v:51]
+INFO: [Synth 8-638] synthesizing module 'FIFO2__parameterized1' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO2.v:51]
+	Parameter width bound to: 1 - type: integer 
+	Parameter guarded bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'FIFO2__parameterized1' (7#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO2.v:51]
+INFO: [Synth 8-638] synthesizing module 'BRAM2' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:30]
+	Parameter PIPELINED bound to: 1'b0 
+	Parameter ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter DATA_WIDTH bound to: 53 - type: integer 
+	Parameter MEMSIZE bound to: 7'b1000000 
+WARNING: [Synth 8-6014] Unused sequential element DOA_R2_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:96]
+WARNING: [Synth 8-6014] Unused sequential element DOB_R2_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:109]
+INFO: [Synth 8-256] done synthesizing module 'BRAM2' (8#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:30]
+INFO: [Synth 8-638] synthesizing module 'BRAM2__parameterized0' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:30]
+	Parameter PIPELINED bound to: 1'b0 
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DATA_WIDTH bound to: 64 - type: integer 
+	Parameter MEMSIZE bound to: 10'b1000000000 
+WARNING: [Synth 8-6014] Unused sequential element DOA_R2_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:96]
+WARNING: [Synth 8-6014] Unused sequential element DOB_R2_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:109]
+INFO: [Synth 8-256] done synthesizing module 'BRAM2__parameterized0' (8#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:30]
+INFO: [Synth 8-638] synthesizing module 'mkSoC_Map' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkSoC_Map.v:54]
+INFO: [Synth 8-256] done synthesizing module 'mkSoC_Map' (9#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkSoC_Map.v:54]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1742]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1809]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1840]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1869]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1963]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2043]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2212]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2231]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2302]
+WARNING: [Synth 8-6014] Unused sequential element rg_lower_word32_full_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3605]
+WARNING: [Synth 8-6014] Unused sequential element master_xactor_rg_wr_resp_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3657]
+WARNING: [Synth 8-6014] Unused sequential element rg_lower_word32_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3669]
+WARNING: [Synth 8-6014] Unused sequential element rg_pte_pa_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3673]
+INFO: [Synth 8-256] done synthesizing module 'mkMMU_Cache' (10#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:88]
+INFO: [Synth 8-638] synthesizing module 'mkMMU_Cache__parameterized0' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:88]
+	Parameter dmem_not_imem bound to: 1'b0 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1053]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1742]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1809]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1840]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1869]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1963]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2043]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2212]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2231]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2302]
+WARNING: [Synth 8-6014] Unused sequential element rg_lower_word32_full_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3605]
+WARNING: [Synth 8-6014] Unused sequential element master_xactor_rg_wr_resp_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3657]
+WARNING: [Synth 8-6014] Unused sequential element rg_lower_word32_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3669]
+WARNING: [Synth 8-6014] Unused sequential element rg_pte_pa_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:3673]
+INFO: [Synth 8-256] done synthesizing module 'mkMMU_Cache__parameterized0' (10#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:88]
+INFO: [Synth 8-638] synthesizing module 'mkNear_Mem_IO' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem_IO.v:49]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem_IO.v:601]
+WARNING: [Synth 8-6014] Unused sequential element rg_addr_lim_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem_IO.v:700]
+INFO: [Synth 8-256] done synthesizing module 'mkNear_Mem_IO' (11#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem_IO.v:49]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem.v:1336]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem.v:1445]
+INFO: [Synth 8-256] done synthesizing module 'mkNear_Mem' (12#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem.v:145]
+INFO: [Synth 8-638] synthesizing module 'mkRISCV_MBox' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:43]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:393]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:421]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:450]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:629]
+INFO: [Synth 8-256] done synthesizing module 'mkRISCV_MBox' (13#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:43]
+INFO: [Synth 8-638] synthesizing module 'mkBranch_Predictor' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkBranch_Predictor.v:36]
+INFO: [Synth 8-638] synthesizing module 'BRAM2__parameterized1' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:30]
+	Parameter PIPELINED bound to: 1'b0 
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter DATA_WIDTH bound to: 118 - type: integer 
+	Parameter MEMSIZE bound to: 10'b1000000000 
+WARNING: [Synth 8-6014] Unused sequential element DOA_R2_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:96]
+WARNING: [Synth 8-6014] Unused sequential element DOB_R2_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:109]
+INFO: [Synth 8-256] done synthesizing module 'BRAM2__parameterized1' (13#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:30]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkBranch_Predictor.v:190]
+INFO: [Synth 8-256] done synthesizing module 'mkBranch_Predictor' (14#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkBranch_Predictor.v:36]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2172]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2209]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2273]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2294]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2349]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2667]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2717]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2741]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2899]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2933]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2958]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2986]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:3136]
+WARNING: [Synth 8-6014] Unused sequential element cfg_logdelay_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:3778]
+WARNING: [Synth 8-6014] Unused sequential element cfg_verbosity_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:3780]
+WARNING: [Synth 8-6014] Unused sequential element rg_start_CPI_cycles_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:3807]
+WARNING: [Synth 8-6014] Unused sequential element rg_start_CPI_instrs_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:3810]
+INFO: [Synth 8-256] done synthesizing module 'mkCPU' (15#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:105]
+INFO: [Synth 8-256] done synthesizing module 'mkCore' (16#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCore.v:105]
+INFO: [Synth 8-256] done synthesizing module 'flute_flute3_0_0' (17#1) [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ip/flute_flute3_0_0/synth/flute_flute3_0_0.v:56]
+WARNING: [Synth 8-3331] design mkBranch_Predictor has unconnected port predict_req_m_old_pc[0]
+WARNING: [Synth 8-3331] design mkRISCV_MBox has unconnected port set_verbosity_verbosity[3]
+WARNING: [Synth 8-3331] design mkRISCV_MBox has unconnected port set_verbosity_verbosity[2]
+WARNING: [Synth 8-3331] design mkRISCV_MBox has unconnected port set_verbosity_verbosity[1]
+WARNING: [Synth 8-3331] design mkRISCV_MBox has unconnected port set_verbosity_verbosity[0]
+WARNING: [Synth 8-3331] design mkRISCV_MBox has unconnected port EN_set_verbosity
+WARNING: [Synth 8-3331] design mkRISCV_MBox has unconnected port EN_req_reset
+WARNING: [Synth 8-3331] design mkRISCV_MBox has unconnected port EN_rsp_reset
+WARNING: [Synth 8-3331] design mkSoC_Map has unconnected port CLK
+WARNING: [Synth 8-3331] design mkSoC_Map has unconnected port RST_N
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[63]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[62]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[61]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[60]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[59]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[58]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[57]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[56]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[55]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[54]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[53]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[52]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[51]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[50]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[49]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[48]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[47]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[46]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[45]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[44]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[43]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[42]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[41]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[40]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[39]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[38]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[37]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[36]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[35]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[34]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[33]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[32]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[31]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[30]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[29]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[28]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[27]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[26]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[25]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[24]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[23]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[22]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[21]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[20]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[19]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[18]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[17]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[16]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[15]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[14]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[13]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[12]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[11]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[10]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[9]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[8]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[7]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[6]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[5]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[4]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[3]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[2]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[1]
+WARNING: [Synth 8-3331] design mkNear_Mem_IO has unconnected port set_addr_map_addr_lim[0]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port set_verbosity_verbosity[3]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port set_verbosity_verbosity[2]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port set_verbosity_verbosity[1]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port set_verbosity_verbosity[0]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port EN_set_verbosity
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_priv[1]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_priv[0]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_sstatus_SUM
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_mstatus_MXR
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[63]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[62]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[61]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[60]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[59]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[58]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[57]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[56]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[55]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[54]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[53]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[52]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[51]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[50]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[49]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[48]
+WARNING: [Synth 8-3331] design mkMMU_Cache__parameterized0 has unconnected port req_satp[47]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.863 ; gain = 171.523 ; free physical = 123427 ; free virtual = 501563
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1345.863 ; gain = 171.523 ; free physical = 123436 ; free virtual = 501573
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.82 ; elapsed = 00:00:00.14 . Memory (MB): peak = 1756.039 ; gain = 11.000 ; free physical = 123121 ; free virtual = 501258
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1756.039 ; gain = 581.699 ; free physical = 123241 ; free virtual = 501377
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1756.039 ; gain = 581.699 ; free physical = 123241 ; free virtual = 501377
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:30 . Memory (MB): peak = 1756.039 ; gain = 581.699 ; free physical = 123242 ; free virtual = 501378
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element rg_mcycle_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:1747]
+INFO: [Synth 8-5544] ROM "IF_rg_addr_7_BITS_2_TO_0_2_EQ_0x0_30_THEN_1_EL_ETC___d261" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MUX_rg_state$write_1__VAL_3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MUX_rg_exc_code$write_1__VAL_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element rg_cset_in_cache_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1276]
+WARNING: [Synth 8-6014] Unused sequential element rg_req_byte_in_cline_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2436]
+INFO: [Synth 8-5544] ROM "IF_rg_addr_7_BITS_2_TO_0_2_EQ_0x0_30_THEN_1_EL_ETC___d261" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MUX_rg_state$write_1__VAL_3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MUX_rg_exc_code$write_1__VAL_1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element rg_cset_in_cache_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1276]
+WARNING: [Synth 8-6014] Unused sequential element rg_req_byte_in_cline_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2436]
+INFO: [Synth 8-4471] merging register 'intDiv_rg_denom_is_signed_reg' into 'intDiv_rg_numer_is_signed_reg' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:300]
+WARNING: [Synth 8-6014] Unused sequential element intDiv_rg_denom_is_signed_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:300]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:363]
+WARNING: [Synth 8-6014] Unused sequential element rg_index_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkBranch_Predictor.v:152]
+INFO: [Synth 8-4471] merging register 'stageF_rg_priv_reg[1:0]' into 'imem_rg_priv_reg[1:0]' [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2522]
+WARNING: [Synth 8-6014] Unused sequential element stageF_rg_priv_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2522]
+WARNING: [Synth 8-3936] Found unconnected internal register 'stage3_rg_stage3_reg' and it is trimmed from '168' to '70' bits. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v:2829]
+INFO: [Synth 8-5544] ROM "CASE_stage1_rg_stage_input_BITS_112_TO_110_0b0_ETC__q17" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CASE_stage1_rg_stage_input_BITS_151_TO_145_0b1_ETC__q19" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "csr_regfile$csr_ret_actions_from_priv" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "near_mem$dmem_req_op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data_to_stage2_rd__h6876" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "CASE_stage1_rg_stage_input_BITS_112_TO_110_0b0_ETC__q17" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "CASE_stage1_rg_stage_input_BITS_151_TO_145_0b1_ETC__q19" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "csr_regfile$csr_ret_actions_from_priv" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "near_mem$dmem_req_op" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data_to_stage2_rd__h6876" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "IF_near_mem_dmem_valid__19_THEN_IF_near_mem_dm_ETC___d1220" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage2_rg_stage2_8_BITS_199_TO_197_9_EQ_3_0_ETC___d125" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage2_rg_stage2_8_BITS_196_TO_192_58_EQ_0__ETC___d1830" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_val___1__h8030" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rd_val___1__h8037" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage1_rg_stage_input_01_BITS_151_TO_145_28_ETC___d5441" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage1_rg_stage_input_01_BITS_151_TO_145_28_ETC___d5410" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_NOT_stage1_rg_stage_input_01_BITS_112_TO_11_ETC___d487" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage1_rg_stage_input_01_BITS_151_TO_145_28_ETC___d5410" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage1_rg_stage_input_01_BITS_151_TO_145_28_ETC___d5410" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage1_rg_stage_input_01_BITS_151_TO_145_28_ETC___d5410" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_stage1_rg_stage_input_01_BITS_151_TO_145_28_ETC___d5410" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IF_rg_cur_priv_8_EQ_0b11_03_OR_rg_cur_priv_8_E_ETC___d5220" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "fall_through_pc__h68300" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CASE_rg_cur_priv_0b0_8_0b1_9_11__q4" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MUX_rg_state$write_1__VAL_1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "MUX_rg_state$write_1__VAL_2" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stage1_rg_stage_input" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal RAM_reg was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:01:35 . Memory (MB): peak = 1756.039 ; gain = 581.699 ; free physical = 123213 ; free virtual = 501349
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |mkMMU_Cache     |           1|     30147|
+|2     |mkNear_Mem__GB1 |           1|     11196|
+|3     |mkNear_Mem__GB2 |           1|     30135|
+|4     |mkCPU__GCB0     |           1|     28317|
+|5     |mkCPU__GCB1     |           1|      9529|
+|6     |mkCPU__GCB2     |           1|     10045|
+|7     |mkCore__GC0     |           1|        36|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 19    
+	   3 Input     64 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 14    
++---Registers : 
+	              401 Bit    Registers := 1     
+	              298 Bit    Registers := 1     
+	              233 Bit    Registers := 1     
+	              137 Bit    Registers := 6     
+	              118 Bit    Registers := 2     
+	               72 Bit    Registers := 2     
+	               70 Bit    Registers := 1     
+	               67 Bit    Registers := 4     
+	               66 Bit    Registers := 8     
+	               64 Bit    Registers := 35    
+	               63 Bit    Registers := 1     
+	               53 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 118   
++---Multipliers : 
+	               64x128  Multipliers := 1     
+	                64x64  Multipliers := 3     
+	                32x32  Multipliers := 1     
++---RAMs : 
+	              59K Bit         RAMs := 1     
+	              32K Bit         RAMs := 2     
+	               3K Bit         RAMs := 2     
++---Muxes : 
+	   2 Input    298 Bit        Muxes := 1     
+	   2 Input    137 Bit        Muxes := 2     
+	   2 Input    118 Bit        Muxes := 1     
+	   4 Input     72 Bit        Muxes := 2     
+	   4 Input     67 Bit        Muxes := 4     
+	   2 Input     66 Bit        Muxes := 2     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 133   
+	   3 Input     64 Bit        Muxes := 9     
+	   9 Input     64 Bit        Muxes := 4     
+	   4 Input     64 Bit        Muxes := 7     
+	   6 Input     64 Bit        Muxes := 2     
+	   5 Input     64 Bit        Muxes := 4     
+	   7 Input     64 Bit        Muxes := 1     
+	  17 Input     64 Bit        Muxes := 3     
+	   8 Input     64 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     53 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 6     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 30    
+	   4 Input      4 Bit        Muxes := 6     
+	   5 Input      4 Bit        Muxes := 2     
+	   9 Input      4 Bit        Muxes := 5     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 12    
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   9 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 12    
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 116   
+	   4 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 2     
+	  13 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FIFO2__1 
+Detailed RTL Component Info : 
++---Registers : 
+	              137 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               66 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized1__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized1__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module BRAM2__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               53 Bit    Registers := 2     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+Module BRAM2__parameterized0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module mkMMU_Cache 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 5     
++---Registers : 
+	               72 Bit    Registers := 1     
+	               67 Bit    Registers := 2     
+	               66 Bit    Registers := 1     
+	               64 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    137 Bit        Muxes := 1     
+	   4 Input     72 Bit        Muxes := 1     
+	   4 Input     67 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 30    
+	   3 Input     64 Bit        Muxes := 3     
+	   9 Input     64 Bit        Muxes := 2     
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input     53 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module FIFO2__2 
+Detailed RTL Component Info : 
++---Registers : 
+	              137 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized0__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               66 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized1__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized1__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module mkNear_Mem_IO 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 3     
+	   6 Input     64 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module FIFO2 
+Detailed RTL Component Info : 
++---Registers : 
+	              137 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               66 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized1__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO2__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module BRAM2 
+Detailed RTL Component Info : 
++---Registers : 
+	               53 Bit    Registers := 2     
++---RAMs : 
+	               3K Bit         RAMs := 1     
+Module BRAM2__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 2     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module mkMMU_Cache__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     64 Bit         XORs := 5     
++---Registers : 
+	               72 Bit    Registers := 1     
+	               67 Bit    Registers := 2     
+	               66 Bit    Registers := 1     
+	               64 Bit    Registers := 5     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    137 Bit        Muxes := 1     
+	   4 Input     72 Bit        Muxes := 1     
+	   4 Input     67 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 30    
+	   3 Input     64 Bit        Muxes := 3     
+	   9 Input     64 Bit        Muxes := 2     
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input     53 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   6 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module FIFO20__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module mkNear_Mem 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+Module BRAM2__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	              118 Bit    Registers := 2     
++---RAMs : 
+	              59K Bit         RAMs := 1     
+Module mkBranch_Predictor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input    118 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module FIFO20__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module mkCSR_MIE 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module mkCSR_MIP 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module FIFO20__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module mkCSR_RegFile 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 9     
+	               63 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     66 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 11    
+	   5 Input     64 Bit        Muxes := 2     
+	  17 Input     64 Bit        Muxes := 3     
+	   8 Input     64 Bit        Muxes := 1     
+	   2 Input     63 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	  17 Input      5 Bit        Muxes := 3     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module FIFO20__8 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__9 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__10 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__11 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module mkRISCV_MBox 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 3     
+	   3 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Multipliers : 
+	               64x128  Multipliers := 1     
+	                64x64  Multipliers := 3     
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 18    
+	   3 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 2     
+	   5 Input     64 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+Module FIFO20__12 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__13 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__14 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__15 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__7 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module mkGPR_RegFile 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+Module FIFO20__16 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20__17 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module mkCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 8     
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     64 Bit         XORs := 4     
++---Registers : 
+	              401 Bit    Registers := 1     
+	              298 Bit    Registers := 1     
+	              233 Bit    Registers := 1     
+	               70 Bit    Registers := 1     
+	               64 Bit    Registers := 3     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input    298 Bit        Muxes := 1     
+	   2 Input     65 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 37    
+	   4 Input     64 Bit        Muxes := 1     
+	   6 Input     64 Bit        Muxes := 1     
+	   5 Input     64 Bit        Muxes := 1     
+	   7 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
+	   3 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 22    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 9     
+	  13 Input      1 Bit        Muxes := 2     
+Module FIFO20__18 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module FIFO20 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element rg_mcycle_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v:1747]
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_awready driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_wready driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_bvalid driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_bresp[1] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_bresp[0] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_arready driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rvalid driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rresp[1] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rresp[0] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[63] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[62] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[61] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[60] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[59] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[58] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[57] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[56] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[55] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[54] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[53] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[52] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[51] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[50] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[49] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[48] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[47] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[46] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[45] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[44] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[43] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[42] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[41] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[40] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[39] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[38] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[37] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[36] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[35] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[34] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[33] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[32] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[31] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[30] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[29] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[28] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[27] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[26] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[25] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[24] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[23] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[22] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[21] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[20] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[19] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[18] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[17] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[16] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[15] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[14] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[13] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[12] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[11] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[10] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[9] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[8] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[7] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[6] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[5] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[4] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[3] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[2] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[1] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port cpu_slave_rdata[0] driven by constant 0
+INFO: [Synth 8-3917] design flute_flute3_0_0 has port RDY_set_verbosity driven by constant 1
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mip/rg_usip_reg' (FDRE) to 'cpui_3/csr_regfile/csr_mip/rg_seip_reg'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[0]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[0]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[4]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mip/rg_ssip_reg' (FDRE) to 'cpui_3/csr_regfile/csr_mip/rg_seip_reg'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[1]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[1]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[5]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[2]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mip/rg_utip_reg' (FDRE) to 'cpui_3/csr_regfile/csr_mip/rg_seip_reg'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[4]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[4]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[8]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mip/rg_stip_reg' (FDRE) to 'cpui_3/csr_regfile/csr_mip/rg_seip_reg'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[5]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[5]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[13]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[6]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mip/rg_ueip_reg' (FDRE) to 'cpui_3/csr_regfile/csr_mip/rg_seip_reg'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[8]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[8]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_3/\csr_regfile/csr_mip/rg_seip_reg )
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[9]' (FDE) to 'cpui_3/csr_regfile/csr_mie/rg_mie_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_3/\csr_regfile/csr_mie/rg_mie_reg[10] )
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[13]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[15]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[14]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[16]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[15]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[23]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[16]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[24]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[23]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[25]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[24]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[26]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[25]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[27]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[26]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[28]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[27]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[29]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[28]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[30]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[29]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[31]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[30]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[32]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[31]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[35]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[32]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[34]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[34]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[36]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[35]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[37]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[36]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[38]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[37]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[39]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[38]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[40]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[39]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[41]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[40]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[42]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[41]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[43]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[42]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[44]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[43]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[45]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[44]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[46]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[45]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[47]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[46]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[48]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[47]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[49]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[48]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[50]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[49]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[51]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[50]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[52]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[51]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[53]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[52]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[54]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[53]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[55]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[54]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[56]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[55]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[57]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[56]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[58]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[57]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[59]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[58]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[60]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[59]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[61]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[60]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[61]' (FDRE) to 'cpui_3/csr_regfile/csr_mstatus_rg_mstatus_reg[63]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_3/\csr_regfile/csr_mstatus_rg_mstatus_reg[62] )
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[0]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[1]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[2]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[3]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[4]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[5]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[6]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[7]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[8]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[9]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[10]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[11]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[12]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[13]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[14]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[15]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[16]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[17]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[18]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[19]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[20]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[21]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[22]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[23]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[24]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[25]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[26]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[27]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[28]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[29]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[30]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[31]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[32]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[33]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[34]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[35]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[36]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[37]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[38]' (FDE) to 'cpui_3/imem_rg_satp_reg[62]'
+INFO: [Synth 8-3886] merging instance 'cpui_3/imem_rg_satp_reg[39]' (FDE) to 'cpui_3/imem_rg_satp_reg[63]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_3/\imem_rg_satp_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpui_3/\imem_rg_satp_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpui_3/\imem_rg_f3_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_3/\imem_rg_f3_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (cpui_3/\csr_regfile/csr_mstatus_rg_mstatus_reg[33] )
+WARNING: [Synth 8-6014] Unused sequential element rg_req_byte_in_cline_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2436]
+WARNING: [Synth 8-6014] Unused sequential element rg_cset_in_cache_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1276]
+WARNING: [Synth 8-3917] design mkMMU_Cache has port RDY_set_verbosity driven by constant 1
+WARNING: [Synth 8-3917] design mkMMU_Cache has port RDY_tlb_flush driven by constant 1
+WARNING: [Synth 8-6014] Unused sequential element ram_state_and_ctag_cset/DOA_R_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:90]
+WARNING: [Synth 8-6014] Unused sequential element ram_state_and_ctag_cset/RAM_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ram_word64_set/DOA_R_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:90]
+WARNING: [Synth 8-6014] Unused sequential element ram_word64_set/RAM_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\rg_req_byte_in_cline_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\rg_req_byte_in_cline_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\rg_req_byte_in_cline_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\master_xactor_rg_rd_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\master_xactor_rg_wr_addr_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (rg_amo_funct7_reg[1]) is unused and will be removed from module mkMMU_Cache.
+WARNING: [Synth 8-3332] Sequential element (rg_amo_funct7_reg[0]) is unused and will be removed from module mkMMU_Cache.
+WARNING: [Synth 8-3332] Sequential element (rg_req_byte_in_cline_reg[0]) is unused and will be removed from module mkMMU_Cache.
+WARNING: [Synth 8-3332] Sequential element (rg_req_byte_in_cline_reg[1]) is unused and will be removed from module mkMMU_Cache.
+WARNING: [Synth 8-3332] Sequential element (rg_req_byte_in_cline_reg[2]) is unused and will be removed from module mkMMU_Cache.
+WARNING: [Synth 8-3332] Sequential element (master_xactor_rg_wr_addr_reg[4]) is unused and will be removed from module mkMMU_Cache.
+WARNING: [Synth 8-3332] Sequential element (master_xactor_rg_rd_addr_reg[2]) is unused and will be removed from module mkMMU_Cache.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\rg_exc_code_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (rg_exc_code_reg[2]) is unused and will be removed from module mkMMU_Cache.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (near_mem_io/\rg_addr_base_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (near_mem_io/\rg_addr_base_reg[63] )
+WARNING: [Synth 8-3332] Sequential element (rg_addr_base_reg[63]) is unused and will be removed from module mkNear_Mem_IO.
+WARNING: [Synth 8-3332] Sequential element (rg_addr_base_reg[30]) is unused and will be removed from module mkNear_Mem_IO.
+WARNING: [Synth 8-6014] Unused sequential element rg_req_byte_in_cline_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:2436]
+WARNING: [Synth 8-6014] Unused sequential element rg_cset_in_cache_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v:1276]
+WARNING: [Synth 8-6014] Unused sequential element ram_state_and_ctag_cset/DOA_R_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:90]
+WARNING: [Synth 8-6014] Unused sequential element ram_state_and_ctag_cset/RAM_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element ram_word64_set/DOA_R_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:90]
+WARNING: [Synth 8-6014] Unused sequential element ram_word64_set/RAM_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/i_9/\rg_req_byte_in_cline_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/i_9/\rg_req_byte_in_cline_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/i_9/\rg_req_byte_in_cline_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data1_reg_reg[64] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (icache/f_near_mem_io_rsps/full_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/\master_xactor_rg_rd_addr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/\master_xactor_rg_wr_addr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (icache/\rg_amo_funct7_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/\rg_op_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[65] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/\master_xactor_rg_wr_addr_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/\master_xactor_rg_wr_addr_reg[66] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/f_near_mem_io_rsps/\data0_reg_reg[64] )
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[136]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[135]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[134]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[133]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[132]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[131]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[130]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[129]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[128]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[127]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[126]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[125]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[124]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[123]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[122]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[121]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[120]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[119]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[118]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[117]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[116]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[115]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[114]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[113]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[112]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[111]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[110]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[109]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[108]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[107]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[106]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[105]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[104]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[103]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[102]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[101]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[100]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[99]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[98]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[97]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[96]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[95]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[94]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[93]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[92]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[91]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[90]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[89]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[88]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[87]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[86]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[85]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[84]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[83]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[82]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[81]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[80]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[79]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[78]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[77]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[76]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[75]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[74]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[73]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[72]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[71]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[70]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[69]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[68]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[67]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[66]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[65]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[64]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[63]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[62]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[61]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[60]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[59]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[58]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[57]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[56]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[55]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[54]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[53]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[52]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[51]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[50]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[49]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[48]) is unused and will be removed from module FIFO2.
+WARNING: [Synth 8-3332] Sequential element (data1_reg_reg[47]) is unused and will be removed from module FIFO2.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (icache/\rg_exc_code_reg[1] )
+WARNING: [Synth 8-6014] Unused sequential element rg_index_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkBranch_Predictor.v:152]
+WARNING: [Synth 8-6014] Unused sequential element bramcore2/DOB_R_reg was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v:103]
+WARNING: [Synth 8-6014] Unused sequential element bramcore2/RAM_reg was removed. 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\stage1_rg_stage_input_reg[10] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\stage1_rg_stage_input_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rg_halt_reg)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 32 [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:568]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:565]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 16 [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:593]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:558]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v:563]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: operator SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125 is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: operator SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125 is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: Generating DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: operator SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125 is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: operator SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125 is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125, operation Mode is: C+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: operator SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125 is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: operator SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125 is absorbed into DSP SEXT_rg_v1_BITS_31_TO_0_21_22_MUL_SEXT_rg_v2_B_ETC___d125.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: operator SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118 is absorbed into DSP SEXT_rg_v1__08_MUL_0_CONCAT_rg_v2_14___d118.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: C+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: register A is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: operator _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115 is absorbed into DSP _0_CONCAT_rg_v1_13_MUL_0_CONCAT_rg_v2_14___d115.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: PCIN+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: Generating DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register B is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: register A is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+DSP Report: operator SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110 is absorbed into DSP SEXT_rg_v1__08_MUL_SEXT_rg_v2__09___d110.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:02:56 . Memory (MB): peak = 1756.039 ; gain = 581.699 ; free physical = 121127 ; free virtual = 499266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mkMMU_Cache             | ram_state_and_ctag_cset/RAM_reg | 64 x 53(READ_FIRST)    | W |   | 64 x 53(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|mkMMU_Cache             | ram_word64_set/RAM_reg          | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|icache                  | ram_state_and_ctag_cset/RAM_reg | 64 x 53(READ_FIRST)    | W |   | 64 x 53(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|icache                  | ram_word64_set/RAM_reg          | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|stageF_branch_predictor | bramcore2/RAM_reg               | 512 x 118(READ_FIRST)  | W |   | 512 x 118(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
++------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------------------+-----------+----------------------+---------------+
+|mkCPU__GCB2 | gpr_regfile/regfile/arr_reg | Implied   | 32 x 64              | RAM32M x 33   | 
++------------+-----------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mkRISCV_MBox | A2*B2            | 18     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 16     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | C+A2*B2          | 18     | 16     | 48     | -      | 48     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 14     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 10     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 14     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 14     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | C+A2*B2          | 18     | 18     | 48     | -      | 48     | 1    | 1    | 0    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 13     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 13     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | A2*B2            | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | PCIN+A2*B2       | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mkRISCV_MBox | (PCIN>>17)+A2*B2 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++-------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |mkMMU_Cache     |           1|     14013|
+|2     |mkNear_Mem__GB1 |           1|      3226|
+|3     |mkNear_Mem__GB2 |           1|      4199|
+|4     |mkCPU__GCB0     |           1|     12848|
+|5     |mkCPU__GCB1     |           1|      3701|
+|6     |mkCPU__GCB2     |           1|      8071|
+|7     |mkCore__GC0     |           1|        35|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:03:08 . Memory (MB): peak = 1899.375 ; gain = 725.035 ; free physical = 120943 ; free virtual = 499082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (near_memi_1/icache/\rg_f3_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (near_memi_1/icache/\rg_f3_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (near_memi_1/icache/\rg_st_amo_val_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (near_memi_1/icache/\rg_st_amo_val_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/\stageD_rg_data_reg[161] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cpui_2/\stage1_rg_stage_input_reg[329] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:03:09 . Memory (MB): peak = 1902.375 ; gain = 728.035 ; free physical = 120958 ; free virtual = 499097
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mkMMU_Cache             | ram_state_and_ctag_cset/RAM_reg | 64 x 53(READ_FIRST)    | W |   | 64 x 53(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|mkMMU_Cache             | ram_word64_set/RAM_reg          | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|icache                  | ram_state_and_ctag_cset/RAM_reg | 64 x 53(READ_FIRST)    | W |   | 64 x 53(WRITE_FIRST)   |   | R | Port A and B     | 0      | 1      | 
+|icache                  | ram_word64_set/RAM_reg          | 512 x 64(READ_FIRST)   | W |   | 512 x 64(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|stageF_branch_predictor | bramcore2/RAM_reg               | 512 x 118(READ_FIRST)  | W |   | 512 x 118(WRITE_FIRST) |   | R | Port A and B     | 0      | 2      | 
++------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives    | 
++------------+-----------------------------+-----------+----------------------+---------------+
+|mkCPU__GCB2 | gpr_regfile/regfile/arr_reg | Implied   | 32 x 64              | RAM32M x 33   | 
++------------+-----------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |mkMMU_Cache     |           1|     13949|
+|2     |mkNear_Mem__GB1 |           1|      3226|
+|3     |mkNear_Mem__GB2 |           1|      2671|
+|4     |mkCPU__GCB0     |           1|     12815|
+|5     |mkCPU__GCB1     |           1|      3689|
+|6     |mkCPU__GCB2     |           1|      8071|
+|7     |mkCore__GC0     |           1|        35|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/csr_regfile/csr_mstatus_rg_mstatus_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[8] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[10] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[12] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[14] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[16] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[18] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/cpu/near_mem/icache/rg_st_amo_val_reg[27] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/icache/ram_state_and_ctag_cset/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/icache/ram_word64_set/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/dcache/ram_state_and_ctag_cset/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/dcache/ram_word64_set/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance cpui_2/inst/cpu/stageF_branch_predictor/bramcore2/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance cpui_2/inst/cpu/stageF_branch_predictor/bramcore2/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:03:23 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120761 ; free virtual = 498901
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |mkMMU_Cache   |           1|      6225|
+|2     |mkCPU__GCB0   |           1|      5281|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/dcache/ram_state_and_ctag_cset/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/dcache/ram_word64_set/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/icache/ram_state_and_ctag_cset/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/near_mem/icache/ram_word64_set/RAM_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/stageF_branch_predictor/bramcore2/RAM_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/cpu/stageF_branch_predictor/bramcore2/RAM_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:03:25 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120810 ; free virtual = 498951
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:03:25 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120811 ; free virtual = 498951
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:03:26 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120809 ; free virtual = 498950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:03:26 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120810 ; free virtual = 498951
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:03:27 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120811 ; free virtual = 498951
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:03:27 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120810 ; free virtual = 498951
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |   877|
+|2     |DSP48E1   |    58|
+|3     |DSP48E1_1 |     2|
+|4     |LUT1      |   342|
+|5     |LUT2      |  2120|
+|6     |LUT3      |  1953|
+|7     |LUT4      |  1857|
+|8     |LUT5      |  2272|
+|9     |LUT6      |  6010|
+|10    |MUXF7     |   137|
+|11    |MUXF8     |     1|
+|12    |RAM32M    |    22|
+|13    |RAMB36E1  |     6|
+|14    |FDRE      |  3908|
+|15    |FDSE      |   106|
++------+----------+------+
+
+Report Instance Areas: 
++------+----------------------------------+----------------------------+------+
+|      |Instance                          |Module                      |Cells |
++------+----------------------------------+----------------------------+------+
+|1     |top                               |                            | 19671|
+|2     |  inst                            |mkCore                      | 19649|
+|3     |    cpu                           |mkCPU                       | 19634|
+|4     |      csr_regfile                 |mkCSR_RegFile               |  2147|
+|5     |        csr_mie                   |mkCSR_MIE                   |   270|
+|6     |        csr_mip                   |mkCSR_MIP                   |    25|
+|7     |        f_reset_rsps              |FIFO20_27                   |     4|
+|8     |      f_reset_reqs                |FIFO20_1                    |     4|
+|9     |      f_reset_rsps                |FIFO20_2                    |     3|
+|10    |      gpr_regfile                 |mkGPR_RegFile               |     9|
+|11    |        f_reset_rsps              |FIFO20_26                   |     5|
+|12    |      near_mem                    |mkNear_Mem                  | 13259|
+|13    |        dcache                    |mkMMU_Cache                 |  9770|
+|14    |          f_near_mem_io_reqs      |FIFO2_20                    |   682|
+|15    |          f_near_mem_io_rsps      |FIFO2__parameterized0_21    |   348|
+|16    |          f_reset_reqs            |FIFO2__parameterized1_22    |  3897|
+|17    |          f_reset_rsps            |FIFO2__parameterized1_23    |    11|
+|18    |          ram_state_and_ctag_cset |BRAM2_24                    |   236|
+|19    |          ram_word64_set          |BRAM2__parameterized0_25    |  1717|
+|20    |        f_reset_rsps              |FIFO20_13                   |     4|
+|21    |        icache                    |mkMMU_Cache__parameterized0 |  1786|
+|22    |          f_near_mem_io_reqs      |FIFO2_17                    |   110|
+|23    |          f_reset_reqs            |FIFO2__parameterized1_18    |   671|
+|24    |          f_reset_rsps            |FIFO2__parameterized1_19    |    42|
+|25    |          ram_state_and_ctag_cset |BRAM2                       |   251|
+|26    |          ram_word64_set          |BRAM2__parameterized0       |   201|
+|27    |        near_mem_io               |mkNear_Mem_IO               |  1688|
+|28    |          f_reqs                  |FIFO2                       |   966|
+|29    |          f_reset_reqs            |FIFO20_14                   |    23|
+|30    |          f_reset_rsps            |FIFO20_15                   |     5|
+|31    |          f_rsps                  |FIFO2__parameterized0       |   436|
+|32    |          f_sw_interrupt_req      |FIFO2__parameterized1       |     7|
+|33    |          f_timer_interrupt_req   |FIFO2__parameterized1_16    |    81|
+|34    |      stage1_f_reset_reqs         |FIFO20_3                    |     5|
+|35    |      stage1_f_reset_rsps         |FIFO20_4                    |     4|
+|36    |      stage2_f_reset_reqs         |FIFO20_5                    |     6|
+|37    |      stage2_f_reset_rsps         |FIFO20_6                    |     4|
+|38    |      stage2_mbox                 |mkRISCV_MBox                |  2823|
+|39    |      stage3_f_reset_reqs         |FIFO20_7                    |     6|
+|40    |      stage3_f_reset_rsps         |FIFO20_8                    |     5|
+|41    |      stageD_f_reset_reqs         |FIFO20_9                    |     5|
+|42    |      stageD_f_reset_rsps         |FIFO20_10                   |     4|
+|43    |      stageF_branch_predictor     |mkBranch_Predictor          |   164|
+|44    |        bramcore2                 |BRAM2__parameterized1       |   143|
+|45    |      stageF_f_reset_reqs         |FIFO20_11                   |     5|
+|46    |      stageF_f_reset_rsps         |FIFO20_12                   |     4|
+|47    |    f_reset_reqs                  |FIFO20                      |     6|
+|48    |    f_reset_rsps                  |FIFO20_0                    |     9|
++------+----------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:03:27 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 120810 ; free virtual = 498951
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 750 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:02:21 . Memory (MB): peak = 1931.309 ; gain = 346.793 ; free physical = 123081 ; free virtual = 501222
+Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:03:31 . Memory (MB): peak = 1931.309 ; gain = 756.969 ; free physical = 123084 ; free virtual = 501222
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+431 Infos, 303 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:03:36 . Memory (MB): peak = 1975.418 ; gain = 814.457 ; free physical = 123088 ; free virtual = 501225
+INFO: [Common 17-1381] The checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_flute3_0_0_synth_1/flute_flute3_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.430 ; gain = 24.012 ; free physical = 123085 ; free virtual = 501226
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.srcs/sources_1/bd/flute/ip/flute_flute3_0_0/flute_flute3_0_0.xci
+INFO: [Coretcl 2-1174] Renamed 47 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_flute3_0_0_synth_1/flute_flute3_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1999.430 ; gain = 0.000 ; free physical = 123070 ; free virtual = 501232
+INFO: [runtcl-4] Executing : report_utilization -file flute_flute3_0_0_utilization_synth.rpt -pb flute_flute3_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.28 . Memory (MB): peak = 1999.430 ; gain = 0.000 ; free physical = 123070 ; free virtual = 501231
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 10 20:32:29 2019...

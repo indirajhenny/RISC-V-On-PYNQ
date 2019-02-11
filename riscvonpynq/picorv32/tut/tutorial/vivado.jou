@@ -2,14 +2,14 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Feb  1 06:41:16 2019
-# Process ID: 5155
-# Current directory: /home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut/tutorial
+# Start of session at: Fri Feb  8 08:07:10 2019
+# Process ID: 25382
+# Current directory: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial
 # Command line: vivado tutorial.xpr
-# Log file: /home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut/tutorial/vivado.log
-# Journal file: /home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut/tutorial/vivado.jou
+# Log file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/vivado.log
+# Journal file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project tutorial.xpr
 update_compile_order -fileset sources_1
-open_bd_design {/home/iavendano/RISC-V-On-PYNQ-Flute/riscvonpynq/picorv32/tut/tutorial/tutorial.srcs/sources_1/bd/tutorial/tutorial.bd}
+open_bd_design {/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/picorv32/tut/tutorial/tutorial.srcs/sources_1/bd/tutorial/tutorial.bd}

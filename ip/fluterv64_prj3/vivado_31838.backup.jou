@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 10 20:13:25 2019
+# Process ID: 31838
+# Current directory: /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_prj3
+# Command line: vivado fluterv64_prj3.xpr
+# Log file: /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_prj3/vivado.log
+# Journal file: /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_prj3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project fluterv64_prj3.xpr
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_tut3 -vendor user.org -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_tut3/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_tut3 /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_tut3/component.xml
+update_compile_order -fileset sources_1
+set_property name flute3 [ipx::current_core]
+set_property display_name Fluterv64_3 [ipx::current_core]
+set_property description Fluterv64_3 [ipx::current_core]
+set_property previous_version_for_upgrade user.org:user:mkCore:1.0 [ipx::current_core]
+set_property core_revision 1 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /home/iavendano/RISC-V-On-PYNQ/ip/fluterv64_tut3

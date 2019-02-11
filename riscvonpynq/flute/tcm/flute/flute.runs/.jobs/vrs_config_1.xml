@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="flute_auto_ds_1_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_auto_ds_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_auto_pc_1_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_subprocessorClk_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_subprocessorClk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_processing_system7_0_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_resetSlice_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_resetSlice_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_psInterruptController_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_psInterruptController_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_psClockConv_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_psClockConv_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_psBramController_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_psBramController_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_procXbar_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_procXbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_procProtocolConv_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_procProtocolConv_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_piccolo_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_piccolo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_auto_us_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_auto_us_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_auto_pc_2_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_procBramController_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_procBramController_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_riscvReset_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_riscvReset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_psProtocolConv_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_psProtocolConv_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_riscvBram_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_riscvBram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_psCrossbar_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_psCrossbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_xbar_1_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_xbar_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_auto_ds_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_auto_ds_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_auto_cc_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_auto_cc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="flute_psClockConv_0_synth_1"/>
+	</Run>
+	<Run Id="flute_xbar_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_auto_pc_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_irqConcat_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_irqConcat_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="flute_porReset_0_synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/flute_porReset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="flute_riscvReset_0_synth_1"/>
+	</Run>
+	<Run Id="synth_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="flute_auto_ds_1_synth_1"/>
+		<Parent Id="flute_auto_pc_1_synth_1"/>
+		<Parent Id="flute_subprocessorClk_0_synth_1"/>
+		<Parent Id="flute_processing_system7_0_0_synth_1"/>
+		<Parent Id="flute_resetSlice_0_synth_1"/>
+		<Parent Id="flute_psInterruptController_0_synth_1"/>
+		<Parent Id="flute_psClockConv_0_synth_1"/>
+		<Parent Id="flute_psBramController_0_synth_1"/>
+		<Parent Id="flute_procXbar_0_synth_1"/>
+		<Parent Id="flute_procProtocolConv_0_synth_1"/>
+		<Parent Id="flute_piccolo_0_synth_1"/>
+		<Parent Id="flute_auto_us_0_synth_1"/>
+		<Parent Id="flute_auto_pc_2_synth_1"/>
+		<Parent Id="flute_procBramController_0_synth_1"/>
+		<Parent Id="flute_riscvReset_0_synth_1"/>
+		<Parent Id="flute_psProtocolConv_0_synth_1"/>
+		<Parent Id="flute_riscvBram_0_synth_1"/>
+		<Parent Id="flute_psCrossbar_0_synth_1"/>
+		<Parent Id="flute_xbar_1_synth_1"/>
+		<Parent Id="flute_auto_ds_0_synth_1"/>
+		<Parent Id="flute_auto_cc_0_synth_1"/>
+		<Parent Id="flute_xbar_0_synth_1"/>
+		<Parent Id="flute_auto_pc_0_synth_1"/>
+		<Parent Id="flute_irqConcat_0_synth_1"/>
+		<Parent Id="flute_porReset_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="flute_auto_ds_1_synth_1"/>
+		<Parent Id="flute_auto_pc_1_synth_1"/>
+		<Parent Id="flute_subprocessorClk_0_synth_1"/>
+		<Parent Id="flute_processing_system7_0_0_synth_1"/>
+		<Parent Id="flute_resetSlice_0_synth_1"/>
+		<Parent Id="flute_psInterruptController_0_synth_1"/>
+		<Parent Id="flute_psClockConv_0_synth_1"/>
+		<Parent Id="flute_psBramController_0_synth_1"/>
+		<Parent Id="flute_procXbar_0_synth_1"/>
+		<Parent Id="flute_procProtocolConv_0_synth_1"/>
+		<Parent Id="flute_piccolo_0_synth_1"/>
+		<Parent Id="flute_auto_us_0_synth_1"/>
+		<Parent Id="flute_auto_pc_2_synth_1"/>
+		<Parent Id="flute_procBramController_0_synth_1"/>
+		<Parent Id="flute_riscvReset_0_synth_1"/>
+		<Parent Id="flute_psProtocolConv_0_synth_1"/>
+		<Parent Id="flute_riscvBram_0_synth_1"/>
+		<Parent Id="flute_psCrossbar_0_synth_1"/>
+		<Parent Id="flute_xbar_1_synth_1"/>
+		<Parent Id="flute_auto_ds_0_synth_1"/>
+		<Parent Id="flute_auto_cc_0_synth_1"/>
+		<Parent Id="flute_xbar_0_synth_1"/>
+		<Parent Id="flute_auto_pc_0_synth_1"/>
+		<Parent Id="flute_irqConcat_0_synth_1"/>
+		<Parent Id="flute_porReset_0_synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,44 @@
+verilog xil_defaultlib --include "../../../../flute.srcs/sources_1/bd/flute/ipshared/ec67/hdl" --include "../../../../flute.srcs/sources_1/bd/flute/ipshared/02c8/hdl/verilog" --include "../../../../flute.srcs/sources_1/bd/flute/ipshared/1313/hdl" --include "../../../../flute.srcs/sources_1/bd/flute/ipshared/4868" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_irqConcat_0/sim/flute_irqConcat_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_processing_system7_0_0/sim/flute_processing_system7_0_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_resetSlice_0/sim/flute_resetSlice_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/flute_subprocessorClk_0_mmcm_pll_drp.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/flute_subprocessorClk_0_clk_wiz.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_subprocessorClk_0/flute_subprocessorClk_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_xbar_1/sim/flute_xbar_1.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_procProtocolConv_0/sim/flute_procProtocolConv_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_procXbar_0/sim/flute_procXbar_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_psClockConv_0/sim/flute_psClockConv_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_psCrossbar_0/sim/flute_psCrossbar_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_psProtocolConv_0/sim/flute_psProtocolConv_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_riscvBram_0/sim/flute_riscvBram_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_xbar_0/sim/flute_xbar_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/sim/flute.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/BRAM2.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO2.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/FIFO20.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/RegFile.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkBranch_Predictor.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCPU.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_MIE.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_MIP.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCSR_RegFile.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkGPR_RegFile.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkMMU_Cache.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkNear_Mem_IO.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkRISCV_MBox.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkSoC_Map.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ipshared/ec93/src/mkCore.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_flute3_0_0/sim/flute_flute3_0_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_auto_ds_1/sim/flute_auto_ds_1.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_auto_pc_1/sim/flute_auto_pc_1.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_auto_pc_2/sim/flute_auto_pc_2.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_auto_us_0/sim/flute_auto_us_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_auto_cc_0/sim/flute_auto_cc_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_auto_ds_0/sim/flute_auto_ds_0.v" \
+"../../../../flute.srcs/sources_1/bd/flute/ip/flute_auto_pc_0/sim/flute_auto_pc_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

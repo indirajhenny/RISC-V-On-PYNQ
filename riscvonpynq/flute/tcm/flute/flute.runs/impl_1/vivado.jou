@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Feb 10 20:34:28 2019
+# Process ID: 6382
+# Current directory: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/impl_1
+# Command line: vivado -log flute_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source flute_wrapper.tcl -notrace
+# Log file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/impl_1/flute_wrapper.vdi
+# Journal file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/flute/tcm/flute/flute.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source flute_wrapper.tcl -notrace
