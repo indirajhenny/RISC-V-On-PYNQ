@@ -1,0 +1,816 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 22 08:01:35 2019
+# Process ID: 11022
+# Current directory: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1
+# Command line: vivado -log microblaze_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source microblaze_wrapper.tcl -notrace
+# Log file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/microblaze_wrapper.vdi
+# Journal file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source microblaze_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/iavendano/RISC-V-On-PYNQ/orca/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/data/opt/Xilinx/Vivado/2017.4/data/ip'.
+Command: link_design -top microblaze_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_irqConcat_0/microblaze_irqConcat_0.dcp' for cell 'microblaze_i/irqConcat'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_porReset_0/microblaze_porReset_0.dcp' for cell 'microblaze_i/porReset'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_processing_system7_0_0/microblaze_processing_system7_0_0.dcp' for cell 'microblaze_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_psInterruptController_0/microblaze_psInterruptController_0.dcp' for cell 'microblaze_i/psInterruptController'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorClk_0/microblaze_softProcessorClk_0.dcp' for cell 'microblaze_i/softProcessorClk'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorResetSlice_0/microblaze_softProcessorResetSlice_0.dcp' for cell 'microblaze_i/softProcessorResetSlice'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_xbar_0/microblaze_xbar_0.dcp' for cell 'microblaze_i/irqAxiInterconnect/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_auto_pc_0/microblaze_auto_pc_0.dcp' for cell 'microblaze_i/irqAxiInterconnect/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_auto_cc_0/microblaze_auto_cc_0.dcp' for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_psBramController_0/microblaze_psBramController_0.dcp' for cell 'microblaze_i/microblazeLmbProcessor/psBramController'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorBram_0/microblaze_softProcessorBram_0.dcp' for cell 'microblaze_i/microblazeLmbProcessor/softProcessorBram'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorLmbCtrl_0/microblaze_softProcessorLmbCtrl_0.dcp' for cell 'microblaze_i/microblazeLmbProcessor/softProcessorLmbCtrl'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorReset_0/microblaze_softProcessorReset_0.dcp' for cell 'microblaze_i/microblazeLmbProcessor/softProcessorReset'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_ublaze_0/microblaze_ublaze_0.dcp' for cell 'microblaze_i/microblazeLmbProcessor/ublaze'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_xbar_1/microblaze_xbar_1.dcp' for cell 'microblaze_i/psAxiInterconnect/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_auto_pc_1/microblaze_auto_pc_1.dcp' for cell 'microblaze_i/psAxiInterconnect/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_auto_pc_2/microblaze_auto_pc_2.dcp' for cell 'microblaze_i/psAxiInterconnect/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 486 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. microblaze_i/softProcessorClk/inst/CLK_CORE_DRP_I/clk_inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'microblaze_i/softProcessorClk/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored by Vivado but preserved for implementation tool. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/.Xil/Vivado-11022-fabricant/dcp7/microblaze_softProcessorClk_0.edf:47991]
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_porReset_0/microblaze_porReset_0_board.xdc] for cell 'microblaze_i/porReset/U0'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_porReset_0/microblaze_porReset_0_board.xdc] for cell 'microblaze_i/porReset/U0'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_porReset_0/microblaze_porReset_0.xdc] for cell 'microblaze_i/porReset/U0'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_porReset_0/microblaze_porReset_0.xdc] for cell 'microblaze_i/porReset/U0'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_processing_system7_0_0/microblaze_processing_system7_0_0.xdc] for cell 'microblaze_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_processing_system7_0_0/microblaze_processing_system7_0_0.xdc] for cell 'microblaze_i/processing_system7_0/inst'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_psInterruptController_0/microblaze_psInterruptController_0.xdc] for cell 'microblaze_i/psInterruptController/U0'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_psInterruptController_0/microblaze_psInterruptController_0.xdc] for cell 'microblaze_i/psInterruptController/U0'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorClk_0/microblaze_softProcessorClk_0_board.xdc] for cell 'microblaze_i/softProcessorClk/inst'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorClk_0/microblaze_softProcessorClk_0_board.xdc] for cell 'microblaze_i/softProcessorClk/inst'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorClk_0/microblaze_softProcessorClk_0.xdc] for cell 'microblaze_i/softProcessorClk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorClk_0/microblaze_softProcessorClk_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorClk_0/microblaze_softProcessorClk_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:11 ; elapsed = 00:00:26 . Memory (MB): peak = 2103.359 ; gain = 500.523 ; free physical = 121387 ; free virtual = 500572
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorClk_0/microblaze_softProcessorClk_0.xdc] for cell 'microblaze_i/softProcessorClk/inst'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorReset_0/microblaze_softProcessorReset_0_board.xdc] for cell 'microblaze_i/microblazeLmbProcessor/softProcessorReset/U0'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorReset_0/microblaze_softProcessorReset_0_board.xdc] for cell 'microblaze_i/microblazeLmbProcessor/softProcessorReset/U0'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorReset_0/microblaze_softProcessorReset_0.xdc] for cell 'microblaze_i/microblazeLmbProcessor/softProcessorReset/U0'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_softProcessorReset_0/microblaze_softProcessorReset_0.xdc] for cell 'microblaze_i/microblazeLmbProcessor/softProcessorReset/U0'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_ublaze_0/microblaze_ublaze_0.xdc] for cell 'microblaze_i/microblazeLmbProcessor/ublaze/U0'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_ublaze_0/microblaze_ublaze_0.xdc] for cell 'microblaze_i/microblazeLmbProcessor/ublaze/U0'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc]
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[0]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[1]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[2]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[3]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[4]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[5]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[6]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[7]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[8]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[9]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[10]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[11]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[12]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[13]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[14]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[15]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[16]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[17]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[18]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[19]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_iic_scl_io'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_iic_sda_io'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_iic_scl_io'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_iic_sda_io'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'arduino_gpio_tri_io[*]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[1]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[0]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[3]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[2]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[5]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[4]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[7]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[6]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[2]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[3]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[6]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJA_gpio_tri_io[7]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[1]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[0]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[3]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[2]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[5]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[4]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[7]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[6]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[2]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[3]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[6]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pmodJB_gpio_tri_io[7]'. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/PYNQ-Z1.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_auto_cc_0/microblaze_auto_cc_0.dcp'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_psInterruptController_0/microblaze_psInterruptController_0_clocks.xdc] for cell 'microblaze_i/psInterruptController/U0'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_psInterruptController_0/microblaze_psInterruptController_0_clocks.xdc] for cell 'microblaze_i/psInterruptController/U0'
+Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_auto_cc_0/microblaze_auto_cc_0_clocks.xdc] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst'
+Finished Parsing XDC File [/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_auto_cc_0/microblaze_auto_cc_0_clocks.xdc] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.aw_handshake/handshake'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.aw_handshake/handshake'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.w_handshake/handshake'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.w_handshake/handshake'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.b_handshake/handshake'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.b_handshake/handshake'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.r_handshake/handshake'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.r_handshake/handshake'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.ar_handshake/handshake'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.ar_handshake/handshake'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.r_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.r_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.r_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.r_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.aw_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.aw_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.aw_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.aw_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.ar_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.ar_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.ar_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.ar_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.w_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.w_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.w_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.w_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.b_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.b_handshake/handshake/xpm_cdc_single_src2dest_inst'
+Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.b_handshake/handshake/xpm_cdc_single_dest2src_inst'
+Finished Sourcing Tcl File [/data/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'microblaze_i/irqAxiInterconnect/s01_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.b_handshake/handshake/xpm_cdc_single_dest2src_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'microblaze_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.srcs/sources_1/bd/microblaze/ip/microblaze_ublaze_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 145 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 81 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 64 instances
+
+31 Infos, 51 Warnings, 49 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:26 ; elapsed = 00:01:41 . Memory (MB): peak = 2105.371 ; gain = 923.062 ; free physical = 121424 ; free virtual = 500582
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2169.391 ; gain = 64.020 ; free physical = 121408 ; free virtual = 500566
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 17 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1abbe5af5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.88 . Memory (MB): peak = 2169.391 ; gain = 0.000 ; free physical = 121418 ; free virtual = 500576
+INFO: [Opt 31-389] Phase Retarget created 160 cells and removed 246 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 6 load pin(s).
+Phase 2 Constant propagation | Checksum: 13e327a73
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2169.391 ; gain = 0.000 ; free physical = 121418 ; free virtual = 500576
+INFO: [Opt 31-389] Phase Constant propagation created 37 cells and removed 102 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 183819fdb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2169.391 ; gain = 0.000 ; free physical = 121416 ; free virtual = 500575
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 1102 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 183819fdb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2169.391 ; gain = 0.000 ; free physical = 121416 ; free virtual = 500575
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 183819fdb
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2169.391 ; gain = 0.000 ; free physical = 121417 ; free virtual = 500575
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2169.391 ; gain = 0.000 ; free physical = 121419 ; free virtual = 500577
+Ending Logic Optimization Task | Checksum: 216e6d97d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2169.391 ; gain = 0.000 ; free physical = 121419 ; free virtual = 500577
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=12.405 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 16 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 32
+Ending PowerOpt Patch Enables Task | Checksum: 15a438aab
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.12 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121388 ; free virtual = 500546
+Ending Power Optimization Task | Checksum: 15a438aab
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 2488.645 ; gain = 319.254 ; free physical = 121398 ; free virtual = 500556
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 51 Warnings, 49 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2488.645 ; gain = 383.273 ; free physical = 121398 ; free virtual = 500556
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121395 ; free virtual = 500555
+INFO: [Common 17-1381] The checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/microblaze_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file microblaze_wrapper_drc_opted.rpt -pb microblaze_wrapper_drc_opted.pb -rpx microblaze_wrapper_drc_opted.rpx
+Command: report_drc -file microblaze_wrapper_drc_opted.rpt -pb microblaze_wrapper_drc_opted.pb -rpx microblaze_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/microblaze_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121383 ; free virtual = 500545
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 12ff3931c
+
+Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121384 ; free virtual = 500546
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121387 ; free virtual = 500548
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 11bf22f57
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121378 ; free virtual = 500539
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 19ba9e1d9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121358 ; free virtual = 500519
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 19ba9e1d9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121355 ; free virtual = 500516
+Phase 1 Placer Initialization | Checksum: 19ba9e1d9
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2488.645 ; gain = 0.000 ; free physical = 121355 ; free virtual = 500516
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: 12d1fdab4
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:13 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121336 ; free virtual = 500498
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 12d1fdab4
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:13 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121338 ; free virtual = 500500
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1bd80e281
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121335 ; free virtual = 500497
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1ea94c492
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121335 ; free virtual = 500497
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 148be2bdf
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:14 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121335 ; free virtual = 500497
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 1d1d008a3
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:17 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121329 ; free virtual = 500491
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1f92b2034
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121330 ; free virtual = 500492
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1f92b2034
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121330 ; free virtual = 500492
+Phase 3 Detail Placement | Checksum: 1f92b2034
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121331 ; free virtual = 500492
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1bbc47bcd
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Place 46-33] Processed net microblaze_i/softProcessorClk/inst/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/current_state_reg[1], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-31] BUFG insertion identified 1 candidate nets, 0 success, 1 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1bbc47bcd
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:19 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121333 ; free virtual = 500495
+INFO: [Place 30-746] Post Placement Timing Summary WNS=11.247. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1549c2ed3
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121333 ; free virtual = 500494
+Phase 4.1 Post Commit Optimization | Checksum: 1549c2ed3
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121333 ; free virtual = 500494
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1549c2ed3
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121333 ; free virtual = 500495
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1549c2ed3
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:19 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121333 ; free virtual = 500495
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: f5e4aad3
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:20 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121333 ; free virtual = 500495
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f5e4aad3
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:20 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121333 ; free virtual = 500495
+Ending Placer Task | Checksum: d7e13cd9
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:20 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121350 ; free virtual = 500511
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 51 Warnings, 49 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:22 . Memory (MB): peak = 2488.727 ; gain = 0.082 ; free physical = 121352 ; free virtual = 500514
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.62 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121336 ; free virtual = 500510
+INFO: [Common 17-1381] The checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/microblaze_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file microblaze_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.29 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121336 ; free virtual = 500502
+INFO: [runtcl-4] Executing : report_utilization -file microblaze_wrapper_utilization_placed.rpt -pb microblaze_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.33 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121347 ; free virtual = 500512
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file microblaze_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121345 ; free virtual = 500510
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: cf8b6a5d ConstDB: 0 ShapeSum: 855d27c RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: fc8dce29
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121171 ; free virtual = 500337
+Post Restoration Checksum: NetGraph: 46d1024c NumContArr: b5bccbdd Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: fc8dce29
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121173 ; free virtual = 500339
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: fc8dce29
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121142 ; free virtual = 500308
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: fc8dce29
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121142 ; free virtual = 500308
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1362684f5
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121148 ; free virtual = 500314
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.337 | TNS=0.000  | WHS=-0.370 | THS=-93.527|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 14245ab5b
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121152 ; free virtual = 500318
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=11.337 | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 158181453
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121162 ; free virtual = 500327
+Phase 2 Router Initialization | Checksum: 12c1fd3a9
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121162 ; free virtual = 500327
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 19b57cf40
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:22 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121162 ; free virtual = 500328
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 714
+ Number of Nodes with overlaps = 26
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.381  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 12f6a64d2
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:24 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121143 ; free virtual = 500309
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.381  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 17e1f0c7c
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:24 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121158 ; free virtual = 500324
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.381  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 20a28dde7
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+Phase 4 Rip-up And Reroute | Checksum: 20a28dde7
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 20a28dde7
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 20a28dde7
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+Phase 5 Delay and Skew Optimization | Checksum: 20a28dde7
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 14d64bec8
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=9.395  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 19cfec4ed
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+Phase 6 Post Hold Fix | Checksum: 19cfec4ed
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500327
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.51445 %
+  Global Horizontal Routing Utilization  = 2.07133 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 209ca4b2a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121161 ; free virtual = 500326
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 209ca4b2a
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:25 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121160 ; free virtual = 500326
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 1942efbc4
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:26 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121158 ; free virtual = 500324
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=9.395  | TNS=0.000  | WHS=0.011  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 1942efbc4
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:26 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121159 ; free virtual = 500324
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:26 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121194 ; free virtual = 500360
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+94 Infos, 51 Warnings, 49 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:29 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121194 ; free virtual = 500360
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.70 . Memory (MB): peak = 2488.727 ; gain = 0.000 ; free physical = 121179 ; free virtual = 500360
+INFO: [Common 17-1381] The checkpoint '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/microblaze_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file microblaze_wrapper_drc_routed.rpt -pb microblaze_wrapper_drc_routed.pb -rpx microblaze_wrapper_drc_routed.rpx
+Command: report_drc -file microblaze_wrapper_drc_routed.rpt -pb microblaze_wrapper_drc_routed.pb -rpx microblaze_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/microblaze_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file microblaze_wrapper_methodology_drc_routed.rpt -pb microblaze_wrapper_methodology_drc_routed.pb -rpx microblaze_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file microblaze_wrapper_methodology_drc_routed.rpt -pb microblaze_wrapper_methodology_drc_routed.pb -rpx microblaze_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/microblaze_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2504.727 ; gain = 0.000 ; free physical = 121141 ; free virtual = 500311
+INFO: [runtcl-4] Executing : report_power -file microblaze_wrapper_power_routed.rpt -pb microblaze_wrapper_power_summary_routed.pb -rpx microblaze_wrapper_power_routed.rpx
+Command: report_power -file microblaze_wrapper_power_routed.rpt -pb microblaze_wrapper_power_summary_routed.pb -rpx microblaze_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+106 Infos, 51 Warnings, 49 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file microblaze_wrapper_route_status.rpt -pb microblaze_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file microblaze_wrapper_timing_summary_routed.rpt -rpx microblaze_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file microblaze_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file microblaze_wrapper_clock_utilization_routed.rpt
+Command: write_bitstream -force microblaze_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC DPIP-1] Input pipelining: DSP microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I2/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 input microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 output microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.No_MUL64.dsp_module_I3/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1 multiplier stage microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/mul_unit_I/Use_HW_MUL.Using_DSP48_Architectures.dsp_module_I1/Using_DSP48E1.DSP48E1_I1/Using_FPGA.DSP48E1_I1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr.WRITE_MSB_SEL_I/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=((~A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr.WRITE_MSB_SEL_I/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=((~A1)*A2*(~A6))+((~A1)*(~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr.WRITE_MSB_SEL_I/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=((~A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr.WRITE_MSB_SEL_I/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=((~A1)*A2*(~A6))+((~A1)*(~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/BYTE_0_1_I/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*(~A3)*(~A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/BYTE_0_1_I/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A3*(~A6))+(A1*A2*(~A3))+(A1*(~A2)*A3*A6)+(A1*(~A2)*(~A3))+((~A1)*(~A3)*(~A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/BYTE_2_3_I/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*(~A3)*(~A4))+((~A1)*A2)+((~A1)*(~A2)*(~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/BYTE_2_3_I/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*(~A3)*(~A4))+((~A1)*A2*A3*(~A6))+((~A1)*A2*(~A3))+((~A1)*(~A2)*A3*A6)+((~A1)*(~A2)*(~A3))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr.WRITE_MSB_SEL_I/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=((~A1))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Byte_Doublet_Handle_I/Use_Dynamic_Bus_Sizing.Not_Using_Reverse_Mem_Instr.WRITE_MSB_SEL_I/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=((~A1)*A2*(~A6))+((~A1)*(~A2))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[0].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[0].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[10].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[10].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[11].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[11].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[12].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[12].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[13].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[13].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[14].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[14].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[15].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[15].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[16].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[16].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[17].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[17].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[18].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[18].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[19].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[19].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[1].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[1].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[20].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[20].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[21].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[21].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[22].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[22].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[23].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[23].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[24].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[24].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[25].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[25].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[26].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[26].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[27].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[27].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[28].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[28].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[29].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[29].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[2].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[2].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[30].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[30].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[31].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[31].Operand_Select_Bit_I/Both_PC_and_MSR.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[3].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[3].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[4].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[4].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[5].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[5].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[6].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[6].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[7].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[7].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[8].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[8].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[9].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT5 is not included in the LUT equation: 'O5=(A1*A2)+(A1*(~A2)*(~A3))+((~A1)*A2*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell microblaze_i/microblazeLmbProcessor/ublaze/U0/MicroBlaze_Core_I/Area.Core/Data_Flow_I/Operand_Select_I/OpSelect_Bits[9].Operand_Select_Bit_I/Only_PC.Op1_LUT6/Using_FPGA.Native/LUT6 is not included in the LUT equation: 'O6=(A1*A2*A4)+(A1*A2*(~A4)*(~A6))+(A1*(~A2)*A3*A4*A6)+(A1*(~A2)*(~A3)*A4)+(A1*(~A2)*(~A3)*(~A4)*(~A6))+((~A1)*A2*A3*A4)+((~A1)*A2*A3*(~A4)*(~A6))+((~A1)*A2*(~A3)*A4*A6)+((~A1)*(~A2)*A4*A6)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 80 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./microblaze_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-186] '/home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/three/microblaze/microblaze.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Fri Feb 22 08:07:23 2019. For additional details about this file, please refer to the WebTalk help file at /data/opt/Xilinx/Vivado/2017.4/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+124 Infos, 132 Warnings, 49 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:23 ; elapsed = 00:02:22 . Memory (MB): peak = 2801.504 ; gain = 262.719 ; free physical = 120806 ; free virtual = 500269
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 22 08:07:23 2019...

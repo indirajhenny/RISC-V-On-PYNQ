@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Feb 22 09:16:05 2019
+# Process ID: 3938
+# Current directory: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/eight/microblaze/microblaze.runs/impl_1
+# Command line: vivado -log microblaze_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source microblaze_wrapper.tcl -notrace
+# Log file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/eight/microblaze/microblaze.runs/impl_1/microblaze_wrapper.vdi
+# Journal file: /home/iavendano/RISC-V-On-PYNQ/riscvonpynq/microblaze/eight/microblaze/microblaze.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source microblaze_wrapper.tcl -notrace
