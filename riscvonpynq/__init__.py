@@ -33,7 +33,6 @@
 # DAMAGE.
 # ----------------------------------------------------------------------
 from . import picorv32
-from . import orca
 from . import magic
 from . import Program
 from . import Overlay
